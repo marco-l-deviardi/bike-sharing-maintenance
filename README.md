@@ -10,7 +10,7 @@ Nonparametric Statistics project, Politecnico di Milano (Mathematical Engineerin
 Analysis of two years of Capital Bikeshare rental data (Washington D.C.) to find the best hours and days for routine bike maintenance with minimal impact on bike availability. The project combines permutation tests, functional data analysis, conformal prediction and semiparametric GAMs. Conformal prediction bands suggest maintenance windows of 10 AM - 3 PM on working days and 5 - 10 AM on weekends.
 
 ![Hourly rentals](output/hourly_rentals.png)
-![Conformal prediction bands](output/conformal_prediction_bands.png)
+![Conformal prediction bands](output/conformal_prediction_bands.jpeg)
 
 ## Dataset
 
