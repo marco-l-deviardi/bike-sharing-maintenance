@@ -41,7 +41,6 @@ background-color: lightblue;
 ```{r}
 library(dplyr)
 library(tidyr)
-library(kableExtra)
 library(corrplot)
 library(fdatest)
 library(data.table)
@@ -67,8 +66,8 @@ library(rgl)
 # Dataset
 
 ```{r}
-day <- read.csv("Dataset/day.csv")
-hour <- read.csv("Dataset/hour.csv")
+day <- read.csv("data/day.csv")
+hour <- read.csv("data/hour.csv")
 
 # checking the number of observations in each day
 blocchi <- rle(hour$dteday)
@@ -113,8 +112,7 @@ hour_wide_sommato <- hour_wide %>%
 day <- day %>%
   left_join(hour_wide_sommato, by = "dteday")
 
-kable(head(day[,1:16]), caption = "Prime righe del dataset day") %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = F)
+kable(head(day[,1:16]), caption = "Prime righe del dataset day") 
 
 ```
 
@@ -703,7 +701,7 @@ y<-fit2$residuals[mer==0]
 perm_t_test(x,y,iter=1e3) 
 plot(day_work$temp, day_work$casual)
 which(day_work$casual>1600)
-day_work$t <- 1:416 #eliminati outlier in riga 523 (holiday)
+day_work$t <- 1:nrow(day_work)
 colours <- rainbow(4)
 col <- colours[day_work$weekday]
 plot(day_work$temp,day_work$casual, col=col, xlab="Temperature", ylab="Rentals")
