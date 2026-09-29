@@ -3,7 +3,7 @@
 
 Nonparametric Statistics project, Politecnico di Milano (Mathematical Engineering), A.Y. 2024-2025.
 
-**Authors:** M. Dello Russo, M. L. Deviardi, G. Gorbani
+**Authors:** Marco Luigi Deviardi, M. Dello Russo, G. Gorbani
 
 ## Overview
 
@@ -19,6 +19,10 @@ Daily and hourly rentals from 2011 and 2012, split into casual and registered us
 ## My contribution
 
 Within the group I mainly worked on the **exploratory analysis** and on the **conformal prediction** part of the project.
+
+## How to run
+
+Install the R packages loaded at the top of `Bike_def.Rmd` and knit it.
 
 ## Repository structure
 
